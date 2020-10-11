@@ -1,24 +1,37 @@
+//Importing React
 import React from 'react';
-import logo from './logo.svg';
+
+// Importing Style Components
 import './App.css';
+
+// Importing Components Of Application
+import Header from './Components/Header';
+import TotalBalance from './Components/TotalBalance';
+import Transaction from './Components/Transaction';
+import AddTransaction from './Components/AddTransaction';
+
+// Importing Global State Provider i.e, Accessable to All Components
+import StateProvider from './GlobalState/StateProvider'
+
+//  Importing Reducer and Initial State 
+import reducer, {initialState} from './GlobalState/reducer'
+
+// Importing Types 
+// import { InitialState } from './Types/Types'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="expense-tracker-application">
+     <StateProvider initialState = { initialState } reducer = {reducer}>
+      
+       <Header />
+       <TotalBalance />
+       <Transaction />
+       < AddTransaction />
+      
+  
+     </StateProvider>
+    
     </div>
   );
 }
