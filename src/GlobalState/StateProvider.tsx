@@ -6,15 +6,21 @@ import { JoinedType } from '../Types/Types'
 // Setting Up A Data Layer
 export const StateContext = createContext({});
 
+const addTransaction = () => {
+
+}
+
 // Building Up A Provider
 const StateProvider = ( {initialState, reducer, children}: JoinedType) => {
     return(
-        <StateContext.Provider value={ useReducer(reducer, initialState) }>
+        // <StateContext.Provider value={ useReducer(reducer, initialState) }>
         
-            {children}
+        //     {children}
         
-        </StateContext.Provider>
-
+        // </StateContext.Provider>
+        <> </>
+        
+    
     );
 }
 export default StateProvider;
