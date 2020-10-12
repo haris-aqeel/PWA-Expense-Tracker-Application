@@ -79,8 +79,8 @@ function AddTransaction() {
   return (
     <div>
       <Tooltip title="Add" aria-label="add" >
-        <Fab color="secondary" className={classes.absolute}>
-          <AddIcon onClick={handleOpen}/>
+        <Fab color="secondary" className={classes.absolute} onClick={handleOpen}>
+          <AddIcon />
         </Fab>
       </Tooltip>
       <Modal
