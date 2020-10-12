@@ -1,23 +1,27 @@
-import { JsxChild, JsxElement, JsxFragment } from "typescript"
-
+import { ReactNode } from "react";
 export type State = {
     id: string;
-    amount: string;
+    amount: number;
     name: string;
-    time: string;
 }
 
-export type InitialState = {
-    TransactionList: State[]
-}
+export type InitialState ={
+    List:  State[] ,
+    addTransaction?:(transaction: State) =>void,
+    deleteTransaction?: (transaction: State) => void
+
+};
 
 export type Action = {
     type: 'ADD-TRANSACTION' | 'REMOVE-TRANSACTION';
-    payload: string
+    payload: State
 }
 
 export type JoinedType = {
     initialState: InitialState;
-    reducer: (state: State, action: Action) => State;
-    children: any;
+    reducer: (state:  InitialState, action:Action)=> InitialState;
+    children: ReactNode;
 }
+
+
+export type Reducer = (state:  InitialState, action:Action)=> InitialState;

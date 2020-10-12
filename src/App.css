@@ -7,11 +7,16 @@
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
+body{
+  background-color: #ecf0f1!important
+}
+
 .expense-tracker-application{
   text-align: center;
   margin: 0 auto;
   min-width: 340px;
   width: 600px;
+  
 }
 
 
@@ -95,3 +100,78 @@
   color: #fff!important;
 }
 
+
+
+.transaction{
+  margin-Top: 16px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.individualTransaction{
+  min-width: 340px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  height: 65px;
+  align-items: center;
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+.transaction__info{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.transaction__detail{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.amount{
+  font-size: 18px;
+  
+}
+.name{
+  font-size: 15px;
+  OPACITY: 0.6;
+  text-transform: lowercase;
+}
+
+.transaction__icon__green{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(76, 175, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.transaction__icon__red{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:rgb(244, 67, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.transaction__remove{
+  padding: 0px 20px;
+}
+
+
+.input-box{
+  margin-bottom: 200px;
+}
