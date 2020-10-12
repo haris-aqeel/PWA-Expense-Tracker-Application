@@ -1,5 +1,4 @@
 
-
 *{
   margin: 0;
   padding: 0;
@@ -15,7 +14,7 @@ body{
   text-align: center;
   margin: 0 auto;
   min-width: 320px;
-  width: 600px;
+  width: 500px;
   
 }
 
@@ -110,7 +109,7 @@ body{
 
 .individualTransaction{
   min-width: 320px;
-  width: 600px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
   padding: 0 0px;
