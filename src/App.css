@@ -7,7 +7,9 @@
 }
 
 body{
-  background-color: #ecf0f1!important
+  background-color: #ecf0f1!important;
+  min-width: 360px;
+  
 }
 
 .expense-tracker-application{
