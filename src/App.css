@@ -14,7 +14,7 @@ body{
 .expense-tracker-application{
   text-align: center;
   margin: 0 auto;
-  min-width: 340px;
+  min-width: 320px;
   width: 600px;
   
 }
@@ -109,7 +109,7 @@ body{
 }
 
 .individualTransaction{
-  min-width: 340px;
+  min-width: 320px;
   width: 600px;
   display: flex;
   justify-content: space-between;
