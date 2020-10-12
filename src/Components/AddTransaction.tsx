@@ -37,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3, 1, 1),
     border: "none",
     outlinbe: "none",
-    height: "300px",
-    width: "400px",
+    maxHeight: "300px",
+    maxWidth: "400px",
   },
 }));
 
