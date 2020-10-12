@@ -27,6 +27,6 @@ For Live Preview of this Application Following Links could be used
 
 Links
 
-1. pwa-expense-tracker-app.surge.sh
+1. https://pwa-expense-tracker-app.surge.sh/
 2. https://pwa-expense-tracker-app.web.app/
 
